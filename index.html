@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">E-LIBRARY</div>
+        <div class="btn-div">
+            <dialog>
+                <form>
+                    <div>
+                        <label for="title">Title:</label>
+                        <input type="text" id="title" name="title">
+                    </div>
+                    <div>
+                        <label for="author">Author:</label>
+                        <input type="text" id="author" name="author">
+                    </div>
+                    <div>
+                        <label for="pages">Number of pages:</label>
+                        <input type="number" id="pages" name="pages">
+                    </div>
+                    <div>
+                        <label for="read">Yet to read?</label>
+                        <select name="read" id="read">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button id="add-submit-btn" value="default">Add Book to Library</button>
+                        <button id="cancel-btn" value="cancel" formmethod="dialog">Cancel</button>
+                    </div>
+                </form>
+            </dialog>
+            <button id="add">+ Add Book</button>
+        </div>
+        <div class="library"></div>
+    </div>
+    <script src="javascript.js" defer></script>
+</body>
+</html>
